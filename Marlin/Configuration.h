@@ -89,7 +89,8 @@
 #define STRING_CONFIG_H_AUTHOR "Bryan Kadel" // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
-#define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
+#define STRING_SPLASH_LINE2 "Bfk: v1.1"         // will be shown during bootup in line 2
+//#define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
 
 //
 // *** VENDORS PLEASE READ *****************************************************
@@ -347,7 +348,7 @@
 // If your configuration is significantly different than this and you don't understand the issues involved, you probably
 // shouldn't use bed PID until someone else verifies your hardware works.
 // If this is enabled, find your own PID constants below.
-#define PIDTEMPBED
+//#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -498,10 +499,12 @@
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 3979, 99 }
 // Driver: DRV8825
-// X,Y set for 1/4 microstepping
+// X,Y set for 1/16 microstepping
 // Z set for full step
-// E set for 1/4 microstepping
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 20, 20, 249, 25 }
+// E set for 1/16 microstepping
+
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 249, 25 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 320, 320, 249, 100 }
 
 /**
  * Default Max Feed Rate (mm/s)
