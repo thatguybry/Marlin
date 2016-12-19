@@ -89,7 +89,7 @@
 #define STRING_CONFIG_H_AUTHOR "Bryan Kadel" // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
-#define STRING_SPLASH_LINE2 "Bfk: v1.1"         // will be shown during bootup in line 2
+#define STRING_SPLASH_LINE2 "Bfk: v1.2"         // will be shown during bootup in line 2
 //#define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
 
 //
@@ -499,7 +499,7 @@
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 3979, 99 }
 // Driver: DRV8825
-// X,Y set for 1/16 microstepping
+// X,Y set for 1/4 microstepping
 // Z set for full step
 // E set for 1/16 microstepping
 
