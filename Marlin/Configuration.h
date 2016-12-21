@@ -89,7 +89,7 @@
 #define STRING_CONFIG_H_AUTHOR "Bryan Kadel" // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
-#define STRING_SPLASH_LINE2 "Bfk: v1.2"         // will be shown during bootup in line 2
+#define STRING_SPLASH_LINE2 "Bfk: v1.3"         // will be shown during bootup in line 2
 //#define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
 
 //
@@ -499,12 +499,12 @@
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 3979, 99 }
 // Driver: DRV8825
-// X,Y set for 1/4 microstepping
+// X,Y set for 1/16 microstepping
 // Z set for full step
 // E set for 1/16 microstepping
 
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 249, 25 }
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 320, 320, 249, 100 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 1280, 1280, 249, 100 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -958,8 +958,8 @@
 #define PREHEAT_1_TEMP_BED     70
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
-#define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED    102
+#define PREHEAT_2_TEMP_HOTEND 235
+#define PREHEAT_2_TEMP_BED    100
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 //
