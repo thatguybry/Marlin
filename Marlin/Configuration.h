@@ -89,7 +89,7 @@
 #define STRING_CONFIG_H_AUTHOR "Bryan Kadel" // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
-#define STRING_SPLASH_LINE2 "Bfk: v1.3"         // will be shown during bootup in line 2
+#define STRING_SPLASH_LINE2 "Bfk: v1.5"         // will be shown during bootup in line 2
 //#define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
 
 //
@@ -504,7 +504,7 @@
 // E set for 1/16 microstepping
 
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 249, 25 }
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 1280, 1280, 249, 100 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 249, 100 }
 
 /**
  * Default Max Feed Rate (mm/s)
