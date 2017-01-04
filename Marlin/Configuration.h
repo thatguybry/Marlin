@@ -504,7 +504,8 @@
 // E set for 1/16 microstepping
 
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 249, 25 }
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 249, 200 }
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 249, 200 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 249, 176 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -738,9 +739,9 @@
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 200
-#define Y_MAX_POS 200
-#define Z_MAX_POS 200
+#define X_MAX_POS 180 
+#define Y_MAX_POS 180
+#define Z_MAX_POS 120
 
 //===========================================================================
 //========================= Filament Runout Sensor ==========================
@@ -861,11 +862,11 @@
   // 3 arbitrary points to probe.
   // A simple cross-product is used to estimate the plane of the bed.
   #define ABL_PROBE_PT_1_X 15
-  #define ABL_PROBE_PT_1_Y 180
+  #define ABL_PROBE_PT_1_Y 165
   #define ABL_PROBE_PT_2_X 15
-  #define ABL_PROBE_PT_2_Y 20
-  #define ABL_PROBE_PT_3_X 170
-  #define ABL_PROBE_PT_3_Y 20
+  #define ABL_PROBE_PT_2_Y 15
+  #define ABL_PROBE_PT_3_X 165
+  #define ABL_PROBE_PT_3_Y 15
 
 #endif
 
